@@ -31,8 +31,6 @@ $projects = [
             padding: 10px 20px; 
             line-height: 1.3;
         }
-        
-        /* Tăng chiều rộng lên 850px và thêm padding */
         .card { 
             max-width: 800px; 
             margin: 0 auto; 
@@ -41,8 +39,6 @@ $projects = [
             border-radius: 16px; 
             box-shadow: 0 4px 20px rgba(0,0,0,0.06); 
         }
-        
-        /* Header lớn hơn */
         .profile {
             display: flex;
             align-items: center;
@@ -66,8 +62,6 @@ $projects = [
         }
         .profile h1 { font-size: 26px; color: #0f172a; margin-bottom: 4px; }
         .profile p { font-size: 16px; color: #64748b; }
-
-        /* Khối thông tin bổ sung */
         .info-boxes {
             display: flex;
             gap: 16px;
@@ -82,8 +76,6 @@ $projects = [
         }
         .info-box label { display: block; font-size: 13px; color: #64748b; font-weight: 600; text-transform: uppercase; margin-bottom: 2px; }
         .info-box span { font-size: 16px; font-weight: 600; color: #1e293b; }
-
-        /* Tiêu đề mục lớn và rõ ràng */
         .section-title {
             font-size: 18px;
             font-weight: 700;
@@ -93,8 +85,6 @@ $projects = [
             align-items: center;
             gap: 8px;
         }
-
-        /* Thẻ dự án rộng rãi, chữ to hơn */
         .projects-list {
             display: flex;
             flex-direction: column;
@@ -124,7 +114,6 @@ $projects = [
         </div>
     </div>
 
-    <!-- Thông tin chi tiết -->
     <div class="info-boxes">
         <div class="info-box">
             <label>Mã sinh viên</label>
@@ -135,8 +124,7 @@ $projects = [
             <span><?php echo $class; ?></span>
         </div>
     </div>
-
-    <!-- Danh sách Dự án -->
+    
     <div class="section-title">Dự án đã thực hiện</div>
 
     <div class="projects-list">
