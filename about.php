@@ -94,20 +94,6 @@ $projects = [
             background: radial-gradient(circle at 50% 20%, rgba(6, 182, 212, 0.18), transparent 70%);
         }
 
-        .hero-avatar {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            color: white;
-            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.35);
-        }
-
         header h1 {
             font-size: 2.8rem;
             font-weight: 700;
@@ -379,9 +365,6 @@ $projects = [
 <body>
     <header>
         <div class="container">
-            <div class="hero-avatar">
-                <i class="fa-solid fa-code"></i>
-            </div>
             <h1><?php echo htmlspecialchars($profile['name']); ?></h1>
             <p><?php echo htmlspecialchars($profile['title']); ?></p>
         </div>
