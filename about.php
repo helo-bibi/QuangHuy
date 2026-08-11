@@ -493,5 +493,4 @@ $projects = [
     </footer>
 
 </body>
-
 </html>
