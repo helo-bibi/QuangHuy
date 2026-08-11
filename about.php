@@ -2,7 +2,6 @@
 $name = "Đoàn Quang Huy"; 
 $student_id = "224001796"; 
 $class = "CNTT D2024A";
-
 $projects = [
     [
         "title" => "Website Dịch vụ Du lịch Đà Nẵng",
