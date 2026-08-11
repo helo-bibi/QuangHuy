@@ -134,7 +134,6 @@ $projects = [
         <div class="avatar">QH</div>
         <div>
             <h1><?php echo $name; ?></h1>
-            <p>Sinh viên Chuyên ngành <?php echo $class; ?></p>
         </div>
     </div>
 
