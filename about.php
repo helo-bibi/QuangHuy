@@ -1,36 +1,154 @@
 <?php
-    $hoTen = "Đoàn Quang Huy"; 
-    $msv = "224001796";          
-    $lop = "CNTT D2024A";              
+$name = "Đoàn Quang Huy"; 
+$student_id = "224001796"; 
+$class = "CNTT D2024A";
+
+$projects = [
+    [
+        "title" => "Website Dịch vụ Du lịch Đà Nẵng",
+        "tech" => "HTML5, CSS3, JavaScript, PHP",
+        "description" => "Trang web đặt tour du lịch, thuê xe tự lái và tìm kiếm các điểm đến nổi tiếng tại Đà Nẵng."
+    ],
+    [
+        "title" => "Ứng dụng Quản lý Kho Hàng (Inventory Management)",
+        "tech" => "Java, JSP/Servlet, MVC Architecture",
+        "description" => "Hệ thống quản lý hàng tồn kho, nhập/xuất kho và phân quyền người dùng."
+    ]
+];
 ?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Giới thiệu cá nhân</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ - <?php echo $name; ?></title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 30px; line-height: 1.6; }
-        .box { background: #f0f4f8; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
-        h1, h2 { color: #1a5276; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            background: #f1f5f9; 
+            color: #334155; 
+            padding: 10px 20px; 
+            line-height: 1.3;
+        }
+        
+        /* Tăng chiều rộng lên 850px và thêm padding */
+        .card { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: #ffffff; 
+            padding: 40px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06); 
+        }
+        
+        /* Header lớn hơn */
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid #f1f5f9;
+            margin-bottom: 28px;
+        }
+        .avatar {
+            width: 70px;
+            height: 70px;
+            background: #2563eb;
+            color: #fff;
+            font-weight: 700;
+            font-size: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            flex-shrink: 0;
+        }
+        .profile h1 { font-size: 26px; color: #0f172a; margin-bottom: 4px; }
+        .profile p { font-size: 16px; color: #64748b; }
+
+        /* Khối thông tin bổ sung */
+        .info-boxes {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+        .info-box {
+            flex: 1;
+            background: #f8fafc;
+            padding: 14px 18px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+        .info-box label { display: block; font-size: 13px; color: #64748b; font-weight: 600; text-transform: uppercase; margin-bottom: 2px; }
+        .info-box span { font-size: 16px; font-weight: 600; color: #1e293b; }
+
+        /* Tiêu đề mục lớn và rõ ràng */
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Thẻ dự án rộng rãi, chữ to hơn */
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .project-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .project-item h3 { font-size: 18px; color: #0f172a; margin-bottom: 6px; }
+        .tech { font-size: 14px; font-weight: 600; color: #2563eb; margin-bottom: 8px; }
+        .project-item p { font-size: 15px; color: #475569; }
     </style>
 </head>
 <body>
 
-    <h1>Hồ sơ cá nhân</h1>
-    <div class="box">
-        <p><strong>Họ và tên:</strong> <?php echo $hoTen; ?></p>
-        <p><strong>Mã sinh viên:</strong> <?php echo $msv; ?></p>
-        <p><strong>Lớp:</strong> <?php echo $lop; ?></p>
+<div class="card">
+    <!-- Profile Header -->
+    <div class="profile">
+        <div class="avatar">QH</div>
+        <div>
+            <h1><?php echo $name; ?></h1>
+            <p>Sinh viên Chuyên ngành <?php echo $class; ?></p>
+        </div>
     </div>
 
-    <h2>Dự án đã làm</h2>
-    <ul>
-        <li>Website bài tập cá nhân / Bài tập lớn môn học trước.</li>
-    </ul>
+    <!-- Thông tin chi tiết -->
+    <div class="info-boxes">
+        <div class="info-box">
+            <label>Mã sinh viên</label>
+            <span><?php echo $student_id; ?></span>
+        </div>
+        <div class="info-box">
+            <label>Lớp / Chuyên ngành</label>
+            <span><?php echo $class; ?></span>
+        </div>
+    </div>
 
-    <h2>Dự án lập trình Web</h2>
-    <p><strong>Tên dự án kiến nghị:</strong>.</p>
-    <p><strong>Mô tả:</strong> Xây dựng các chức năng CRUD, đăng nhập, phân quyền và kết nối CSDL MySQL bằng PHP.</p>
+    <!-- Danh sách Dự án -->
+    <div class="section-title">Dự án đã thực hiện</div>
+
+    <div class="projects-list">
+        <?php foreach ($projects as $project): ?>
+            <div class="project-item">
+                <h3><?php echo $project['title']; ?></h3>
+                <div class="tech">Công nghệ: <?php echo $project['tech']; ?></div>
+                <p><?php echo $project['description']; ?></p>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
 
 </body>
 </html>
