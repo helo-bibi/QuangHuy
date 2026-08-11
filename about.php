@@ -38,6 +38,27 @@ $projects = [
             border-radius: 16px; 
             box-shadow: 0 4px 20px rgba(0,0,0,0.06); 
         }
+        .top-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #eff6ff;
+            color: #2563eb;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            border: 1px solid #dbeafe;
+        }
+        .top-badge .dot {
+            width: 6px;
+            height: 6px;
+            background-color: #2563eb;
+            border-radius: 50%;
+        }
         .profile {
             display: flex;
             align-items: center;
@@ -104,7 +125,11 @@ $projects = [
 <body>
 
 <div class="card">
-    <!-- Profile Header -->
+    <div class="top-badge">
+        <span class="dot"></span>
+        Hồ sơ cá nhân
+    </div>
+    
     <div class="profile">
         <div class="avatar">QH</div>
         <div>
