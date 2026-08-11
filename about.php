@@ -5,6 +5,7 @@ $profile = [
     'education' => 'Sinh viên năm 3',
     'major' => 'Toán - CNTT',
     'class' => 'CNTT D2024A',
+    'student_id' => '224001796',
     'school' => 'Đại học Thủ đô Hà Nội',
     'email' => 'quanghuyhq06@gmail.com',
     'github' => 'https://github.com/qhuyd-bee/QuangHuy',
@@ -402,6 +403,10 @@ $projects = [
                     <div class="about-info-item">
                         <i class="fa-solid fa-users"></i>
                         <strong>Lớp:</strong> <?php echo htmlspecialchars($profile['class']); ?>
+                    </div>
+                    <div class="about-info-item">
+                        <i class="fa-solid fa-id-card"></i>
+                        <strong>Mã sinh viên:</strong> <?php echo htmlspecialchars($profile['student_id']); ?>
                     </div>
                     <div class="about-info-item">
                         <i class="fa-solid fa-school"></i>
